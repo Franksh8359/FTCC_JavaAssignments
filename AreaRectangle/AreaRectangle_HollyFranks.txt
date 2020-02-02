@@ -1,0 +1,43 @@
+import javax.swing.JOptionPane;
+
+public class AreaRectangle_HollyFranks
+{
+	public static double getLength(double l)
+	{
+		String input = JOptionPane.showInputDialog("What is the length of your rectangle?");
+		double length = Double.parseDouble(input);
+		return length;
+	}
+
+	public static double getWidth(double w)
+	{
+		String input = JOptionPane.showInputDialog("What is the width of your rectangle?");
+		double width = Double.parseDouble(input);
+		return width;
+	}
+
+	public static double getArea(double l, double w)
+	{
+		return l * w;
+	}
+
+	public static void displayData(double l, double w, double a)
+	{
+		JOptionPane.showDialog(null, "The area of a rectangle with the dimensions\n" + l + " x " + w +
+										"has an area of\n" + a);
+	}
+
+	public static void main(String[] args)
+	{
+		double length, width, area;
+
+		length = getLength();
+
+		width = getWidth();
+
+		area = getArea(length, width);
+
+      	displayData(length, width, area);
+	}
+
+}

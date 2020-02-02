@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+
+
+<Pane fx:id="mainForm" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="217.0" prefWidth="331.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXMLDocumentController">
+   <children>
+      <Button fx:id="calculateButton" layoutX="17.0" layoutY="163.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="216.0" text="Calculate" />
+      <Button fx:id="exitButton" layoutX="239.0" layoutY="163.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="71.0" text="Exit" />
+      <TextField fx:id="costTextBox" layoutX="145.0" layoutY="43.0" />
+      <TextField fx:id="markupTextBox" layoutX="145.0" layoutY="74.0" />
+      <TextField fx:id="outputTextBox" disable="true" layoutX="145.0" layoutY="107.0" />
+      <Label layoutX="47.0" layoutY="47.0" text="Wholsesale Cost:" />
+      <Label layoutX="27.0" layoutY="78.0" text="Markup (as decimal):" />
+      <Label fx:id="outputLabel" layoutX="76.0" layoutY="111.0" text="Retail Price:" />
+   </children>
+</Pane>
